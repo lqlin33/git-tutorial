@@ -1,7 +1,7 @@
 ## git-tutorial
 
 Contributors: Sidney Kochman, Grace Roller
- 
+
 Secondary Contributors: Lucy Lin
 
 Thank you to [Daniele Procida](https://dont-be-afraid-to-commit.readthedocs.io/en/latest/git/commandlinegit.html) and [Nicola Paolucci](https://www.atlassian.com/git/articles/git-forks-and-upstreams) for their amazing Git resources!
@@ -99,7 +99,7 @@ If you're using VS Code, type:
 
 to open the current folder.
 
-Then, add your name to `Contributors` list in this file.
+Then, add your name to the `Contributors` list in the readme file.
 
 After that you're ready to **stage** your changes.
 
@@ -228,7 +228,7 @@ Now, you can update the remote repository with these new changes:
 
 Up to this point, you've made changes to the original code base and updated your remote repositiory with those changes. Now you want to contribute back to the original repo.
 
-To do this you'll open a **pull request**. Pull requests basically just merge one bracnch into another. But, pull requests are often used so maintainers can make sure the code getting merged in works and is up to project standards. They're also a great way to get feedback on your code. 
+To do this you'll open a **pull request**. Pull requests basically just merge one branch into another. But, pull requests are often used so maintainers can make sure the code getting merged in works and is up to project standards. They're also a great way to get feedback on your code. 
 
 Go to your reposititory on GitHub. Click the **New pull request** button. Under the title **Open a pull request**, click the **compare across forks** option.
 
@@ -266,21 +266,18 @@ The steps are almost the same as above, except instead of pushing to remote `mas
 
 By entering:
 ```
->> git push origin new-branch name
+>> git push origin new-branch-name
 ```
 
 the remote `new-branch-name` is created if it doesn't exist already.
 
 #### 5. Update your branch with changes on remote master branch
 
-If the project you're working on uses branching, you don't have to worry about an upstream repository. Instead, other contributors working on the same project will update the remote master. To make sure you're working with the current code base and to resolve any conflicts locally it is good to:
+If the project you're working on uses branching, you don't have to worry about an upstream repository. Instead, other contributors working on the same project will update the remote master. It is good to make sure you're working with the current code base and to resolve any conflicts locally regularly.
 ```
 >> git fetch
 >> git merge origin/master
 ```
-
-regularly.
-
 
 #### 6. See resolving conflicts above
 
